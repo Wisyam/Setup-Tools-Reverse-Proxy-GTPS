@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 SCRIPT_NAME=$(basename "$0")
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-DEFAULT_CONFIG_PATH="${SCRIPT_DIR}/proxy/.env"
+DEFAULT_CONFIG_PATH="${SCRIPT_DIR}/.env"
 WG_INTERFACE="wg0"
 
 MODE=""
